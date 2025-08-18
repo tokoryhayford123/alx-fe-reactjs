@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Bolognese",
+    "image": "https://via.placeholder.com/300",
+    "ingredients": ["200g spaghetti", "100g minced beef", "1 onion", "2 tomatoes", "Salt", "Pepper"],
+    "instructions": "Boil spaghetti. Cook minced beef with onion and tomatoes. Mix together and serve."
+  },
+  {
+    "id": 2,
+    "name": "Chicken Salad",
+    "image": "https://via.placeholder.com/300",
+    "ingredients": ["200g chicken breast", "Lettuce", "Cucumber", "Tomatoes", "Olive oil"],
+    "instructions": "Grill chicken, chop vegetables, mix with olive oil, and serve fresh."
+  }
+]
