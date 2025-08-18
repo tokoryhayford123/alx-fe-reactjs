@@ -1,35 +1,49 @@
-# Tailwind React Integration
+# 🍳 Recipe Finder (TheMealDB)
 
-This is a React project bootstrapped with **Vite** and configured to use **Tailwind CSS**.
+A React + Tailwind app to search recipes by **dish name**, view **ingredients**, **instructions**, a **YouTube video**, and a **source link** — powered by **TheMealDB**.
 
-## Features
-- React 18 setup
-- Tailwind CSS integration with utility-first styling
-- Vite for fast development and builds
+## ✨ Features
+- Search recipes by dish name (e.g., "Arrabiata")
+- List view with image, title, category, and cuisine
+- Details view with full ingredients, instructions, YouTube, and source
+- Responsive UI with Tailwind CSS
+- Error & empty-state handling
+- URL-sharing (search query synced to `?q=`)
+- ⭐ Favorites (localStorage)
+- 📝 Shopping list (localStorage)
 
-## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/tailwind-react-integration.git
-```
-2. Install dependencies:
+## 🚀 Quick start
 ```bash
 npm install
-```
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-## Tailwind Setup
-- Tailwind installed via `npm install tailwindcss @tailwindcss/vite`
-- `tailwind.config.js` added with content paths
-- Directives included in `src/index.css`:
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+## 🧩 Tech
+- React + Vite
+- Tailwind CSS
+- React Router
+- Zustand (favorites & shopping list)
+- TheMealDB API
+
+## 🔗 API
+- Search: `https://www.themealdb.com/api/json/v1/1/search.php?s=<term>`
+- Lookup by ID: `https://www.themealdb.com/api/json/v1/1/lookup.php?i=<id>`
+
+## 🛠 Build
+```bash
+npm run build
+npm run preview
 ```
 
-## License
-MIT
+## ☁️ Deploy
+- **Netlify**: drag-drop `dist/` or connect your repo (build: `npm run build`, publish: `dist`)
+- **Vercel**: import your repo (framework: Vite), it autodetects
+
+## 🧪 Notes
+- No API key needed for TheMealDB free endpoints
+- Handles network errors and empty results gracefully
+- Accessible labels & keyboard-friendly controls
+
+---
+
+MIT © 2025 Recipe Finder

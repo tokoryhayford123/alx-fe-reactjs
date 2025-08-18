@@ -1,11 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind React Integration</title>
+    <meta name="description" content="Recipe Finder using TheMealDB - search by dish name, view ingredients, instructions, and video." />
+    <title>Recipe Finder • TheMealDB</title>
+    <script>
+      // Initialize theme before paint
+      (function() {
+        try {
+          const stored = localStorage.getItem('theme');
+          const mql = window.matchMedia('(prefers-color-scheme: dark)');
+          const systemPrefersDark = mql.matches;
+          if (stored === 'dark' || (!stored && systemPrefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
   </head>
-  <body>
+  <body class="bg-gray-50 dark:bg-gray-900">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
